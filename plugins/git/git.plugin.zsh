@@ -218,3 +218,7 @@ alias glum='git pull upstream master'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"'
+
+alias grp='git review post'
+alias grs='git review submit'
+alias grsand='git review sandbox'
