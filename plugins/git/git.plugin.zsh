@@ -179,6 +179,7 @@ alias glp="_git_log_prettily"
 compdef _git glp=git-log
 
 alias gm='git merge'
+alias gmm='git merge master'
 alias gmom='git merge origin/master'
 alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
@@ -238,5 +239,5 @@ alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"'
 
 alias grp='git review post'
-alias grs='git review submit'
+alias grs='git merge origin/master && git review submit'
 alias grsand='git review sandbox'
